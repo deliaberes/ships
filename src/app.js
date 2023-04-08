@@ -23,26 +23,26 @@ function init() {
     doc.tbody = document.querySelector('#ships');
 }
 function getShips() {
-    let host = 'https://localhost:8000/';
+    let host = 'http://localhost:8000/';
     let endpoint = 'ships';
     let url = host + endpoint;
     fetch(url)
     .then(response => response.json())
     .then(result => {
-        state.ship = result;
+        state.ships = result;
         render();
     });
 }
 
 function render() {
     let rows = '';
-    state.ships.forEach(ships => {
+    state.ships.forEach(ship => {
         console.log(ship.name);
         rows += `
             <tr>
                 <td>${ship.name}</td>
                 <td>${ship.length}</td>
-                <td>${ship.cost}</td>
+                <td>${ship.price}</td>
                 <td>${ship.person}</td>
                 <td>${ship.trailer}</td>
             </tr>
