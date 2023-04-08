@@ -1,0 +1,47 @@
+/*
+  File: style.css
+  Author: Béres Délia
+  Copyright: 2023, Béres Délia
+  Group: Szoft I-1-E
+  Date: 2023-04-08
+  Github: https://github.com/deliaberes/ships.git
+  Licens: GNU GPL
+  */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(202, 202, 202);
+   
+}
+.container {
+    text-align: right;
+    padding: 2mm;
+    font-style: italic;
+
+    
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #363635;
+    color: white;
+  }
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#hajok {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-left: 30%;
+    margin-right: 30%;
+   
+}
+
+footer {
+    padding: 2mm;
+    font-style: italic;
+    margin-top: 5%;
+
+}
